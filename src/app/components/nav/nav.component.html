@@ -2,5 +2,17 @@
 <a routerLink="demo/demo1">Bindings</a> |
 <a routerLink="demo/demo2">Pipes</a> |
 <a routerLink="demo/demo3">Directives</a> |
+<a routerLink="demo/demo4">validator</a> |
+<a routerLink="demo/demo5">Login screen</a> |
 <a routerLink="exercice/exo1">Chrono</a> |
+<button (click)="logout()" *ngIf="isConnected">Déconnexion</button>
+<!-- <ul>
+  <li *ngFor="let lien of listeLien; let i = index">
+   <a [routerLink]="lien.url"
+      style="cursor : pointer;"
+      (click)="switchChildrenVisible(i)">
+        {{lien.title}}
+    </a>
 
+  </li>
+</ul> -->

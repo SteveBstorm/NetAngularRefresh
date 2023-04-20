@@ -7,13 +7,15 @@ import { HomeComponent } from './components/home/home.component';
 import { NavComponent } from './components/nav/nav.component';
 import { DemoComponent } from './components/demo/demo.component';
 import { Demo1Component } from './components/demo/demo1/demo1.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Demo2Component } from './components/demo/demo2/demo2.component';
 import { EurtobtcPipe } from './shared/eurtobtc.pipe';
 import { ExerciceComponent } from './components/exercice/exercice.component';
 import { Exo1Component } from './components/exercice/exo1/exo1.component';
 import { TotimePipe } from './shared/totime.pipe';
 import { Demo3Component } from './components/demo/demo3/demo3.component';
+import { Demo4Component } from './components/demo/demo4/demo4.component';
+import { Demo5Component } from './components/demo/demo5/demo5.component';
 
 
 @NgModule({
@@ -28,12 +30,15 @@ import { Demo3Component } from './components/demo/demo3/demo3.component';
     ExerciceComponent,
     Exo1Component,
     TotimePipe,
-    Demo3Component
+    Demo3Component,
+    Demo4Component,
+    Demo5Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
