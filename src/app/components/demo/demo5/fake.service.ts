@@ -6,10 +6,6 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class FakeService {
 
-  userList : any = [
-    {email : "toto@toto.com", pwd : "toto"}
-  ]
-
   get isConnected() : boolean {
     return JSON.parse(localStorage.getItem("status") ?? "false")
   }
